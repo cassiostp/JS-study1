@@ -1,0 +1,36 @@
+h1 {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#login-button {
+    background-color: black;
+    color: rgb(226, 97, 22);
+}
+
+div {
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+ 
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(29, 4, 90);
+    color: white;
+}
