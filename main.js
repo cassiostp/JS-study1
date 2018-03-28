@@ -29,9 +29,16 @@ let booksList = [["JS para leigos", "VP"], ["Harry Potter", "JK"],
                 ["Game of thrones", "Aquele gordo"]];
 
 function showBooksList(){
+    
+    document.body.innerHTML = "";
+    let h1 = document.createElement("h1");
+    h1.textContent = "Books List";
+    document.body.appendChild(h1);
+
     let table = document.createElement("table");
     let thTitle = document.createElement("th");
     let thAuthor = document.createElement("th");
+    
 
     table.setAttribute("id", "books-list");
     document.body.appendChild(table);
