@@ -3,7 +3,7 @@ h1 {
     text-align: center;
 }
 
-#login-button {
+#login-button:hover {
     background-color: black;
     color: rgb(226, 97, 22);
 }
@@ -33,4 +33,10 @@ th {
     text-align: left;
     background-color: rgb(29, 4, 90);
     color: white;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
