@@ -1,5 +1,5 @@
 class Authenticator {  
-    static attemptLogin() {
+    static attemptLogin(username, password) {
         if (username.value === "teste" && password.value === "pass"){
             console.log("Login successful!");
             return true;
