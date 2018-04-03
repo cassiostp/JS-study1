@@ -1,22 +1,14 @@
 class Authenticator {  
-    static attemptLogin(username, password) {
-        if (username.value === "teste" && password.value === "pass"){
-            console.log("Login successful!");
-            return true;
-        }
-        else if (username.value === "" || password.value === ""){
-            console.log("Please fill all the fields.");
-            username.value = "";
-            password.value = "";
-            username.focus();
-            return false;
-        }
-        else {
-            console.log("Login failed. Wrong user or password.");
-            username.value = "";
-            password.value = "";
-            username.focus();
-            return false;
-        }
+    static loginRequest(form, fun) {
+        let xhr = new XMLHttpRequest();
+        let formData = new FormData(form);
+        console.log(formData.entries());
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                fun();
+            }
+        };
+        xhr.open('POST', '/', true);
+        xhr.send(formData);
     }
 }

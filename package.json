@@ -1,0 +1,22 @@
+{
+  "name": "js-study1",
+  "version": "1.0.0",
+  "description": "Study project",
+  "main": "\u001b[Dapp.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassiostp/JS-study1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassiostp/JS-study1/issues"
+  },
+  "homepage": "https://github.com/cassiostp/JS-study1#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
